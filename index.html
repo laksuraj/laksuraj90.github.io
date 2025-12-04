@@ -6,74 +6,78 @@
     <title>Suraj L – Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 0;
-            background: #f5f7fa;
-            color: #333;
+            background: #f0f2f5;
+            color: #222;
         }
         header {
-            background: #1e1e1e;
-            padding: 40px;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            padding: 70px 20px;
             text-align: center;
             color: #fff;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-weight: 700;
         }
         header p {
             margin-top: 10px;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         nav {
-            background: #fff;
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background: #ffffff;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            border-bottom: 1px solid #ddd;
             position: sticky;
             top: 0;
             z-index: 100;
         }
         nav a {
-            margin-right: 20px;
             text-decoration: none;
             color: #333;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 1rem;
         }
         .container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 50px auto;
             padding: 0 20px;
         }
         section {
-            margin-bottom: 60px;
+            margin-bottom: 70px;
         }
         h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
+            border-left: 4px solid #6c63ff;
+            padding-left: 10px;
+            font-size: 1.8rem;
         }
-        .project {
+        .project, .blog-post-preview {
             background: #fff;
             padding: 20px;
+            border-radius: 12px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-            border-radius: 8px;
-        }
-        footer {
-            background: #1e1e1e;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
         }
         .btn {
             display: inline-block;
             padding: 10px 18px;
-            background: #007bff;
+            background: #6c63ff;
             color: #fff;
             text-decoration: none;
-            border-radius: 6px;
-            margin-top: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        footer {
+            background: #1f1c2c;
+            color: #fff;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -87,6 +91,7 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -96,8 +101,8 @@
             <h2>About Me</h2>
             <p>
                 I am a BBA graduate, entrepreneur, and founder of a Bangalore-based software company.
-                I build and resell AI-powered solutions including virtual try‑on software, telehealth platforms,
-                and contract‑analysis tools for real estate and legal industries.
+                I build and resell AI-powered solutions including virtual try-on software, telehealth platforms,
+                and contract-analysis tools for real estate and legal industries.
             </p>
         </section>
 
@@ -120,13 +125,23 @@
             </div>
 
             <div class="project">
-                <h3>Telehealth White‑Label Solution</h3>
-                <p>Providing doctors & clinics in Australia a ready‑to‑deploy telehealth platform.</p>
+                <h3>Telehealth White-Label Solution</h3>
+                <p>Providing doctors & clinics in Australia a ready-to-deploy telehealth platform.</p>
             </div>
 
             <div class="project">
-                <h3>Virtual Try‑On for E‑Commerce</h3>
-                <p>Reselling and customizing AR try‑on software for fashion e‑commerce brands.</p>
+                <h3>Virtual Try-On for E-Commerce</h3>
+                <p>Reselling and customizing AR try-on software for fashion e-commerce brands.</p>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Latest Blog Posts</h2>
+            <p>Your blog is powered by Jekyll. Posts will automatically appear here.</p>
+
+            <div class="blog-post-preview">
+                <h3><a href="/blog/" class="btn">Visit My Blog</a></h3>
+                <p>Click above to view articles on business, AI, marketing, and building software products.</p>
             </div>
         </section>
 
